@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timeline | History Unfolded</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c19e6a;
+    }
+
+    .title-section {
+      background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .title-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #c19e6a;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px 30px;
+      box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: #2c2c2c;
+      border: 4px solid #c19e6a;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item:nth-child(odd)::before {
+      right: -10px;
+    }
+
+    .timeline-item:nth-child(even)::before {
+      left: -10px;
+    }
+
+    .timeline-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content h3 {
+      color: #4b3f2f;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        text-align: left !important;
+      }
+
+      .timeline-item:nth-child(even),
+      .timeline-item:nth-child(odd) {
+        left: 0;
+      }
+
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Timelines</a>
+    <a href="#">Civilizations</a>
+    <a href="#">Wars</a>
+    <a href="#">Leaders</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="title-section">
+    <h1>Historical Timeline</h1>
+    <p>Step through the milestones that shaped our world.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>3000 BCE – Rise of Ancient Egypt</h3>
+        <p>Formation of one of the world’s first great civilizations, known for pyramids, pharaohs, and monumental architecture.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>776 BCE – First Olympic Games</h3>
+        <p>Held in Olympia, Greece, this event honored Zeus and marked the beginning of organized athletic contests in Western culture.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>44 BCE – Assassination of Julius Caesar</h3>
+        <p>Caesar's death marked the fall of the Roman Republic and the rise of imperial rule under Augustus.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>476 CE – Fall of Western Roman Empire</h3>
+        <p>The collapse of Roman control in the West is considered a key turning point that led to the Middle Ages.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1776 – American Declaration of Independence</h3>
+        <p>Thirteen colonies declared independence from British rule, laying the foundation for the United States of America.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 History Unfolded. All rights reserved.
+  </footer>
+
+</body>
+</html>
