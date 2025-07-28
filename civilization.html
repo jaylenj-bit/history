@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Civilizations | History Unfolded</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c19e6a;
+    }
+
+    .title-section {
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1f9c11d8d37d');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .title-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .civilization-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #4b3f2f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timelines</a>
+    <a href="#">Civilizations</a>
+    <a href="#">Wars</a>
+    <a href="#">Leaders</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="title-section">
+    <h1>Major Civilizations</h1>
+    <p>Explore the greatest cultures that shaped human history</p>
+  </div>
+
+  <div class="content">
+    <div class="civilization-grid">
+      
+      <div class="card">
+        <h3>Ancient Egypt</h3>
+        <p>Flourishing along the Nile River, Ancient Egypt is known for its pyramids, pharaohs, hieroglyphics, and advanced knowledge in medicine and architecture.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mesopotamia</h3>
+        <p>Often called the “Cradle of Civilization,” Mesopotamia introduced writing, law codes, and urban development in the Fertile Crescent.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ancient China</h3>
+        <p>From the Shang to Han dynasties, China developed silk, paper, and the Great Wall, deeply influencing East Asian culture and philosophy.</p>
+      </div>
+
+      <div class="card">
+        <h3>Indus Valley</h3>
+        <p>Located in present-day Pakistan and India, this urban society was known for grid-planned cities, drainage systems, and trade networks.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ancient Greece</h3>
+        <p>Famed for philosophy, democracy, and the arts, Greek civilization laid the foundation for Western political and intellectual thought.</p>
+      </div>
+
+      <div class="card">
+        <h3>Roman Empire</h3>
+        <p>Spanning Europe, Africa, and the Middle East, Rome influenced law, engineering, and governance, leaving a powerful legacy still felt today.</p>
+      </div>
+
+      <div class="card">
+        <h3>Maya Civilization</h3>
+        <p>The Maya built sophisticated cities, calendars, and pyramids in Central America, achieving advanced astronomy and mathematics.</p>
+      </div>
+
+      <div class="card">
+        <h3>Inca Empire</h3>
+        <p>Centered in the Andes Mountains, the Incas built vast road networks and stone cities like Machu Picchu, ruling a large South American empire.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ottoman Empire</h3>
+        <p>Emerging in the 13th century, the Ottomans ruled much of Southeast Europe, North Africa, and the Middle East for over 600 years.</p>
+      </div>
+
+      <div class="card">
+        <h3>British Empire</h3>
+        <p>The largest empire in history, Britain’s influence extended across continents, impacting global politics, language, industry, and trade.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 History Unfolded. All rights reserved.
+  </footer>
+
+</body>
+</html>
