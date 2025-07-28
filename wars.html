@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wars | History Unfolded</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c19e6a;
+    }
+
+    .title-section {
+      background-image: url('https://images.unsplash.com/photo-1609766855420-7634d84c8b2f');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .title-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .war-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #4b3f2f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timelines</a>
+    <a href="civilizations.html">Civilizations</a>
+    <a href="#">Wars</a>
+    <a href="#">Leaders</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="title-section">
+    <h1>Major Wars</h1>
+    <p>Conflicts that shaped nations and redefined history</p>
+  </div>
+
+  <div class="content">
+    <div class="war-grid">
+
+      <div class="card">
+        <h3>Trojan War</h3>
+        <p>Legendary conflict between the Greeks and Trojans, famously detailed in Homer’s *Iliad*, blending myth and history.</p>
+      </div>
+
+      <div class="card">
+        <h3>Greco-Persian Wars</h3>
+        <p>5th-century BCE wars where Greek city-states resisted the Persian Empire, preserving Western cultural independence.</p>
+      </div>
+
+      <div class="card">
+        <h3>Peloponnesian War</h3>
+        <p>Internal Greek conflict between Athens and Sparta that weakened the region and shifted power balances.</p>
+      </div>
+
+      <div class="card">
+        <h3>Punic Wars</h3>
+        <p>Three major conflicts between Rome and Carthage, leading to Roman dominance over the western Mediterranean.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hundred Years’ War</h3>
+        <p>Prolonged struggle (1337–1453) between England and France, marked by Joan of Arc and shifting dynasties.</p>
+      </div>
+
+      <div class="card">
+        <h3>Napoleonic Wars</h3>
+        <p>European wars led by Napoleon Bonaparte, reshaping continental boundaries and modern military tactics.</p>
+      </div>
+
+      <div class="card">
+        <h3>American Civil War</h3>
+        <p>Conflict (1861–1865) between the Union and Confederacy over slavery, state rights, and national unity in the U.S.</p>
+      </div>
+
+      <div class="card">
+        <h3>World War I</h3>
+        <p>The “Great War” (1914–1918) involved global empires and trench warfare, ending with the Treaty of Versailles.</p>
+      </div>
+
+      <div class="card">
+        <h3>World War II</h3>
+        <p>A global war (1939–1945) involving Axis and Allied powers, resulting in the Holocaust, atomic bomb, and a redefined world order.</p>
+      </div>
+
+      <div class="card">
+        <h3>Vietnam War</h3>
+        <p>Cold War-era conflict between communist North Vietnam and U.S.-backed South Vietnam; a major turning point in American foreign policy.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cold War</h3>
+        <p>Decades-long geopolitical tension (1947–1991) between the U.S. and USSR, marked by proxy wars and nuclear standoff.</p>
+      </div>
+
+      <div class="card">
+        <h3>Russia-Ukraine War</h3>
+        <p>Ongoing conflict beginning in 2022 with Russia’s full-scale invasion, reshaping European security and global alliances.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 History Unfolded. All rights reserved.
+  </footer>
+
+</body>
+</html>
