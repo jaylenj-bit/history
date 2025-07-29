@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaders | History Unfolded</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c19e6a;
+    }
+
+    .title-section {
+      background-image: url('https://images.unsplash.com/photo-1605993439219-9eb999f93b84');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .title-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .leader-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #4b3f2f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timelines</a>
+    <a href="civilizations.html">Civilizations</a>
+    <a href="wars.html">Wars</a>
+    <a href="#">Leaders</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="title-section">
+    <h1>Major Leaders</h1>
+    <p>Influential figures who changed the course of history</p>
+  </div>
+
+  <div class="content">
+    <div class="leader-grid">
+
+      <div class="card">
+        <h3>Julius Caesar</h3>
+        <p>Roman general and dictator whose conquests expanded the Roman Republic and set the stage for the Roman Empire.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cleopatra VII</h3>
+        <p>The last active ruler of the Ptolemaic Kingdom of Egypt, known for her political skill, intelligence, and alliances with Roman leaders.</p>
+      </div>
+
+      <div class="card">
+        <h3>Alexander the Great</h3>
+        <p>King of Macedonia who created one of the largest empires in history, spreading Greek culture across three continents.</p>
+      </div>
+
+      <div class="card">
+        <h3>Genghis Khan</h3>
+        <p>Founder of the Mongol Empire, uniting the Mongol tribes and conquering vast territories across Asia and Europe.</p>
+      </div>
+
+      <div class="card">
+        <h3>Napoleon Bonaparte</h3>
+        <p>French military leader and emperor who rose to power during the French Revolution and reshaped Europe through war and reform.</p>
+      </div>
+
+      <div class="card">
+        <h3>George Washington</h3>
+        <p>Commander of the American Revolution and the first President of the United States, setting many democratic precedents.</p>
+      </div>
+
+      <div class="card">
+        <h3>Abraham Lincoln</h3>
+        <p>U.S. president who led the nation through the Civil War and abolished slavery with the Emancipation Proclamation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Winston Churchill</h3>
+        <p>British Prime Minister during WWII, known for his leadership, speeches, and resistance against Nazi Germany.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mahatma Gandhi</h3>
+        <p>Indian independence leader who pioneered nonviolent resistance against British rule and inspired civil rights movements worldwide.</p>
+      </div>
+
+      <div class="card">
+        <h3>Nelson Mandela</h3>
+        <p>Anti-apartheid revolutionary and South Africa’s first Black president, who led the country through peaceful democratic transition.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 History Unfolded. All rights reserved.
+  </footer>
+
+</body>
+</html>
